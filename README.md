@@ -57,4 +57,4 @@ Simulates a basic recruiter workflow to shortlist candidates based on:
 ![Filter](filter.png)
 
 ### 🏆 Ranking Output
-![Rank](rank.png)
+![Rank](Rank.png)
