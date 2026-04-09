@@ -30,7 +30,13 @@ Simulates a basic recruiter workflow to shortlist candidates based on:
 - Experience 
 
 
-## ▶️ How to Run Locally
+## ▶️ How to Run
 
+1. Install dependencies:
 - pip install flask
-- python resume_webapp.py
+
+2. Run the app:
+- python app.py
+
+3. Open browser:
+- http://127.0.0.1:5000
