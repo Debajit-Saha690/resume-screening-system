@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Candidates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffebee, #ffcdd2);
+            text-align: center;
+            margin: 0;
+        }
+
+        .header {
+            background: #b71c1c;
+            color: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #b71c1c;
+            margin-top: 25px;
+        }
+
+        .candidate {
+            border: 2px solid #b71c1c;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px auto;
+            width: 430px;
+            max-width: 90%;
+            background: #fff5f5;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: left;
+        }
+
+        .no-data {
+            margin-top: 25px;
+            font-weight: bold;
+            color: #b71c1c;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px 0 30px;
+            color: #b71c1c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Resume Screening System</h1>
+    </div>
+
+    <h2>All Candidates</h2>
+
+    {% if candidates %}
+        {% for c in candidates %}
+            <div class="candidate">
+                <b>ID:</b> {{ c.id }}<br>
+                <b>Name:</b> {{ c.name }}<br>
+                <b>Class 10th %:</b> {{ c.class10 }}<br>
+                <b>Class 12th %:</b> {{ c.class12 }}<br>
+                <b>CGPA:</b> {{ c.cgpa }}<br>
+                <b>Projects:</b> {{ c.projects }}<br>
+                <b>Hackathons Participated:</b> {{ c.hackathons_count }}<br>
+                <b>Highest Position:</b> {{ c.hackathon_position | title }}<br>
+                <b>LeetCode Score:</b> {{ c.leetcode }}<br>
+                <b>CodeChef Score:</b> {{ c.codechef }}<br>
+                <b>HackerRank Score:</b> {{ c.hackerrank }}<br>
+                <b>Coding Average:</b> {{ c.coding_avg }}<br>
+                <b>Skills:</b> {{ c.skills | map('title') | join(", ") }}<br>
+                <b>Experience:</b> {{ c.experience_input }}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="no-data">No Candidates Available</p>
+    {% endif %}
+
+    <a href="/">⬅ Back to Home</a>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

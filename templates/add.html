@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Candidate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
+            text-align: center;
+            margin: 0;
+        }
+
+        .header {
+            background: #e65100;
+            color: white;
+            padding: 20px;
+        }
+
+        .box {
+            width: 420px;
+            max-width: 90%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #e65100;
+        }
+
+        input, select, button {
+            padding: 10px;
+            margin: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 90%;
+        }
+
+        button {
+            background: #ff9800;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e65100;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #bf360c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Resume Screening System</h1>
+    </div>
+
+    <div class="box">
+        <h2>Add New Candidate</h2>
+
+        <form method="POST" id="addCandidateForm">
+            <input type="text" id="name" name="name" placeholder="Name" required><br>
+            <input type="number" step="0.01" id="class10" name="class10" placeholder="Class 10th %" required><br>
+            <input type="number" step="0.01" id="class12" name="class12" placeholder="Class 12th %" required><br>
+            <input type="number" step="0.01" id="cgpa" name="cgpa" placeholder="CGPA" required><br>
+            <input type="number" id="projects" name="projects" placeholder="Number of Projects" required><br>
+            <input type="number" id="hackathons_count" name="hackathons_count" placeholder="Number of Hackathons" required><br>
+
+            <select id="hackathon_position" name="hackathon_position" required>
+                <option value="none">None</option>
+                <option value="participant">Participant</option>
+                <option value="finalist">Finalist</option>
+                <option value="runner-up">Runner-up</option>
+                <option value="winner">Winner</option>
+            </select><br>
+
+            <input type="number" id="leetcode" name="leetcode" placeholder="LeetCode Score" required><br>
+            <input type="number" id="codechef" name="codechef" placeholder="CodeChef Score" required><br>
+            <input type="number" id="hackerrank" name="hackerrank" placeholder="HackerRank Score" required><br>
+            <input type="text" id="skills" name="skills" placeholder="Skills (comma separated)" required><br>
+            <input type="text" id="experience" name="experience" placeholder="Experience (e.g. 2 years or NA)" required><br>
+
+            <button type="submit">Submit Candidate</button>
+        </form>
+
+        <a href="/">⬅ Back to Home</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
