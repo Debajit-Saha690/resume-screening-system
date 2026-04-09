@@ -9,8 +9,8 @@ A Flask-based web application to manage and screen candidate resumes using struc
 - View All Candidates
 - Search by ID or Name
 - Filter and Rank Candidates
-- Screening Report (Selected vs Rejected)
 - Coding Average Calculation
+- Screening Report (Total Number of Selected and Rejected Candidates)
 
 
 ## 🛠️ Tech Stack
@@ -32,5 +32,5 @@ Simulates a basic recruiter workflow to shortlist candidates based on:
 
 ## ▶️ How to Run Locally
 
-pip install flask
-python resume_webapp.py
+- pip install flask
+- python resume_webapp.py
