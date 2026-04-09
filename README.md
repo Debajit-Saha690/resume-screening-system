@@ -35,8 +35,26 @@ Simulates a basic recruiter workflow to shortlist candidates based on:
 1. Install dependencies:
 - pip install flask
 
-2. Run the app:
+2. Run the web app:
 - python resume_webapp.py
 
-3. Open browser:
-- http://127.0.0.1:5000
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](home.png)
+
+### ➕ Add Candidate
+![Add](add.png)
+
+### 📊 View Candidates
+![View](view.png)
+
+### 🔍 Search Candidate
+![Search](search.png)
+
+### ⚙️ Filter & Rank
+![Filter](filter.png)
+
+### 🏆 Ranking Output
+![Rank](rank.png)
