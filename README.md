@@ -1,7 +1,7 @@
 # Resume Screening System
 
-A Python Flask-based web application that simulates a basic recruitment workflow by managing, filtering, and ranking candidate resumes using structured rule-based logic.
-This project helps simulate how recruiters shortlist candidates based on structured scoring logic.
+- A Python Flask-based web application that simulates a basic recruitment workflow by managing, filtering, and ranking candidate resumes using structured rule-based logic.
+- This project helps simulate how recruiters shortlist candidates based on structured scoring logic.
 
 
 ## 🚀 Features
