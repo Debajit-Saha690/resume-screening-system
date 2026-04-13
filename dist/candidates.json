@@ -200,5 +200,24 @@
         ],
         "experience": 6.0,
         "experience_input": "6 months"
+    },
+    {
+        "id": 2010,
+        "name": "Rohit Saha",
+        "class10": 60.0,
+        "class12": 70.0,
+        "cgpa": 7.5,
+        "projects": 1,
+        "hackathons_count": 1,
+        "hackathon_position": "participant",
+        "leetcode": 50,
+        "codechef": 60,
+        "hackerrank": 50,
+        "skills": [
+            "python",
+            "dsa"
+        ],
+        "experience": 1.0,
+        "experience_input": "1 month"
     }
 ]
