@@ -1,35 +1,51 @@
 # Resume Screening System
 
-A Flask-based web application to manage and screen candidate resumes using structured filtering and ranking logic.
+A Python Flask-based web application that simulates a basic recruitment workflow by managing, filtering, and ranking candidate resumes using structured rule-based logic.
+This project helps simulate how recruiters shortlist candidates based on structured scoring logic.
 
 
 ## 🚀 Features
 
-- Add Candidate Profiles
-- View All Candidates
-- Search by ID or Name
-- Filter and Rank Candidates
-- Coding Average Calculation
-- Screening Report (Total Number of Selected and Rejected Candidates)
+- ➕ Add candidate profiles with academic and skill details
+- 📋 View all registered candidates
+- 🔍 Search candidates by ID or Name
+- 🎯 Filter and rank candidates based on performance metrics
+- 🧮 Automatic coding score average calculation
+- 📊 Screening report showing:
+  - Total selected candidates
+  - Total rejected candidates
+
+
+## 🧠 Evaluation Criteria
+
+Candidates are evaluated based on:
+
+- Academic performance (CGPA / marks)
+- Number of projects
+- Hackathon participation
+- Coding platform scores
+- Technical skills
+- Experience
 
 
 ## 🛠️ Tech Stack
 
-- Python (Flask)
-- HTML, CSS, JavaScript
-- JSON (Data Storage)
+- Backend: Python (Flask)
+- Frontend: HTML, CSS, JavaScript
+- Data Storage: JSON (file-based system)
 
 
-## 🎯 Use Case
+## 📁 Project Structure
 
-Simulates a basic recruiter workflow to shortlist candidates based on:
-- Academic performance
-- Number of Projects and hackathons
-- Coding platform scores
-- Skills matching
-- Experience 
-
-
+- Resume Screening System/
+  - resume_webapp.py
+  - templates/
+  - static/
+  - candidates.json
+  - Screenshot/
+  - README.md
+ 
+    
 ## ▶️ How to Run
 
 1. Install dependencies:
@@ -42,19 +58,19 @@ Simulates a basic recruiter workflow to shortlist candidates based on:
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](home.png)
+![Home](Screenshot/home.png)
 
 ### ➕ Add Candidate
-![Add](add.png)
+![Add](Screenshot/add.png)
 
 ### 📊 View Candidates
-![View](view.png)
+![View](Screenshot/view.png)
 
 ### 🔍 Search Candidate
-![Search](search.png)
+![Search](Screenshot/search.png)
 
 ### ⚙️ Filter & Rank
-![Filter](filter.png)
+![Filter](Screenshot/filter.png)
 
 ### 🏆 Ranking Output
-![Rank](Rank.png)
+![Rank](Screenshot/Rank.png)
